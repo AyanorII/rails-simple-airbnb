@@ -1,0 +1,8 @@
+<%= link_to "Add flat", new_flat_path, class: "btn btn-outline-primary mt-5" %>
+
+<h1 class="mt-3 mb-3">All of our flats (<%= @flats.count %>)</h1>
+<ul>
+  <% @flats.each do |flat| %>
+    <li><%= link_to flat.name, flat %></li>
+  <% end %>
+</ul>

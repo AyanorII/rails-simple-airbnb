@@ -1,0 +1,9 @@
+
+<%= simple_form_for @flat, class: "form-inline" do |f| %>
+  <%= f.input :name, class: "form-control mr-sm-2" %>
+  <%= f.input :address, class: "form-control mr-sm-2" %>
+  <%= f.input :description, class: "form-control mr-sm-2" %>
+  <%= f.input :price_per_night, class: "form-control mr-sm-2" %>
+  <%= f.input :number_of_guests, class: "form-control mr-sm-2" %>
+  <%= f.submit class: "btn btn-outline-success my-2 my-sm-0" %>
+<% end %>
